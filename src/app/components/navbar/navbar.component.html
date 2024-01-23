@@ -1,0 +1,15 @@
+<div class="container">
+    <nav mat-tab-nav-bar [backgroundColor]="background" [tabPanel]="tabPanel">
+        @for (page of listOfPage; track page) {
+            @if(page.path){
+                <a 
+                class="nav-label"
+                mat-tab-link
+                [routerLink]="page.path"
+                (click)="activePage = page"
+                [active]="activePage == page"> {{ page.path }} </a>
+            }
+        }
+    </nav>
+    <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
+</div>

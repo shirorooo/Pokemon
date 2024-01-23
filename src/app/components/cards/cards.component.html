@@ -1,0 +1,18 @@
+<ngx-slick-carousel
+    class="carousel"
+    #slickModal="slick-carousel"
+    [config]="slideConfig"
+>
+    <div ngxSlickItem class="slide" *ngFor="let video of listOfYoutubeVideoId">
+        @if(video){
+            <mat-card class="card">
+                <youtube-player
+                    class="card-video"
+                    [height]="360" 
+                    [width]="560"
+                    [videoId]="video">
+                </youtube-player>
+            </mat-card>
+        }
+    </div>
+</ngx-slick-carousel>

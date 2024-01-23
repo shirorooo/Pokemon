@@ -1,0 +1,19 @@
+.card {
+    max-width: 600px;
+}
+
+.card .card-video{
+    padding: 20px;
+}
+
+.slick-prev:before, .slick-next:before {
+    height: 45px !important;
+    width: 40px !important;
+    color: black !important;
+}
+
+.slick-slider {
+    width: 88%;
+    margin: auto;
+  }
+  
